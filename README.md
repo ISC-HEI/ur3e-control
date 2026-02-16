@@ -14,22 +14,14 @@ Open the given Jupyter notebook to get a quick library overview:
 
 ### Poetry 
 
-This codebase uses [poetry](https://python-poetry.org/docs/#installing-with-the-official-installer) for dependency management. Poetry can be installed with the command
-```bash
-curl -sSL https://install.python-poetry.org | python3 -
-```
-or, from a Windows Power shell, with
-```bash
-(Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicParsing).Content | py -
-```
-Make sure to add `poetry` to your `PATH` (see poetry documentation).
+This codebase uses [uv](https://docs.astral.sh/uv/getting-started/installation/) for dependency management.
 
 From the repository's top-level, run
 ```bash
-poetry install
+uv sync
 ```
 
-The virtual python environment can then be activated by invoking a `poetry shell`.
+The virtual python environment can then be activated by running `source .venv/bin/activate`.
 
 ## Forks
 Basecode is a fork of https://github.com/Mandelbr0t/UniversalRobot-Realtime-Control/tree/master.
